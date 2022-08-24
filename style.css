@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: whitesmoke;
+    background-color: #191919;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: none;
+    border: none;
+    color: whitesmoke;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 4px;
+}
+
+p {
+    color: gray;
+
+}
+
+header {
+    background-color: rgba(39, 39, 39, 0.8);
+    padding: 25px 0;
+    height: 90px;
+}
+
+
+.logo,
+nav {
+    margin: 0 5%;
+    padding: 8px;
+}
+
+.logo-text {
+    font-weight: bold;
+    border: 3px solid whitesmoke;
+    padding: 4px 8px;
+    font-size: px;
+}
+
+.icon img {
+    background-color: whitesmoke;
+    width: 32px;
+    height: 32px;
+}
+
+.logo {
+    width: 15%;
+    float: left;
+}
+
+nav {
+    text-align: right;
+    width: 60%;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    display: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+
+.section-title {
+    padding: 12px;
+    border-bottom: 5px solid whitesmoke;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.banner {
+    height: 600px;
+    text-align: center;
+
+    background-image: url('./images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome {
+    height: 100%;
+    background-color: rgba(25, 25, 25, 0.4);
+    padding: 250px 10%;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.btn {
+    padding: 16px 32px;
+    color: whitesmoke;
+    background: none;
+    font-weight: bold;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    border: 3px solid whitesmoke;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+    color: #191919;
+}
+
+.best-food {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.b-food-card {
+    /* background-color: darkseagreen; */
+    width: 90%;
+    height: 450px;
+    /* margin: 0 auto 10px auto; */
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+
+    display: inline-block;
+}
+
+.b-food-image {
+    height: 60%;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.b-food-image img {
+    height: 100%;
+    width: 100%;
+    /* border-radius: 15px 15px 0 0; */
+
+    object-fit: cover;
+
+    transition: all 500ms;
+}
+
+
+.b-food-image:hover img {
+    transform: scale(1.35) rotate(15deg);
+}
+
+
+.b-food-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.b-food-info>* {
+    margin-bottom: 10px;
+}
+
+.b-food-info h5 {
+    color: salmon;
+}
+
+
+
+.more-btn {
+    padding: 4px 8px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.more-btn span {
+    transition: all 250ms;
+}
+.more-btn:hover {
+    color: salmon;
+}
+
+.more-btn:hover span {
+    margin-left: 8px;
+}
+
+
+.category {
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.category a {
+    letter-spacing: 2px;
+    margin: 0 6px;
+    color: lightgray;
+    border-bottom: 4px solid lightgray;
+}
+
+.category a.active {
+    color: crimson;
+    border-bottom: 4px solid crimson;
+}
+
+.category a:hover {
+    color: crimson;
+    border-bottom: 4px solid crimson;
+}
+
+.food {
+    height: 250px;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: darksalmon; */
+    padding: 5px 25px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid whitesmoke;
+    border-radius: 15px;
+}
+
+.food:hover {
+    box-shadow: 0 0 10px whitesmoke;
+}
+
+
+.food-image {
+    height: 45%;
+}
+
+.food-desc {
+    padding: 8px 0;
+    height: 45%;
+}
+
+.food-desc h4 {
+    margin-bottom: 8px;
+}
+
+.food-price {
+    height: 10%;
+}
+
+.food-price p {
+    color: salmon;
+}
+
+.food-image img {
+    height: 100%;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.our-chef {
+    text-align: center;
+}
+
+
+.chef {
+    height: 200px;
+    width: 90%;
+    margin: 15px auto;
+
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+
+}
+
+.chef-profile {
+    /* width: 150px; */
+    height: 100%;
+    width: 200px;
+    float: left;
+
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.chef-info {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.chef-info h4 {
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+.reserve-form,
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    /* background-color: lightslategray; */
+}
+
+input, label, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    margin: 4px;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+input, textarea {
+    border: 2px solid lightgray;
+    background: none;
+    border-radius: 10px;
+}
+
+input:hover,
+textarea:hover {
+    background-color: rgba(245, 245, 245, 0.25);
+}
+
+
+
+
+input:focus, textarea:focus {
+    outline: none;
+    background: none;
+}
+
+.btn-primary {
+    padding: 8px;
+    margin-top: 12px;
+    letter-spacing: 2px;
+    color: salmon;
+    border: 2px solid salmon;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: salmon;
+}
+
+
+.map {
+    display: block;
+    width: 80%;
+    height: 450px;
+    margin: 25px auto;
+    border-radius: 15px;
+    border: 5px solid whitesmoke;
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    height: 100px;
+    /* background-color: aliceblue; */
+}

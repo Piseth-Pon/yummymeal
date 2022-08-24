@@ -1,0 +1,202 @@
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+
+
+    .icon {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        padding: 6px;
+    }
+
+    ul li {
+        width: 17.5%;
+        /* text-align: center; */
+    }
+
+    ul li:hover a {
+        color: darkcyan;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 650px;
+    }
+
+    .welcome h1 {
+        font-size: 44px;
+    }
+
+    .b-food-card {
+        width: 30%;
+        height: 500px;
+    }
+
+    .food {
+        height: 150px;
+        width: 90%;
+        margin: 0 auto 10px auto;
+        padding: 5px;
+    }
+
+    .food-image {
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+
+    .food-image img {
+        /* width: ; */
+        width: 100%;
+    }
+
+    .food-desc {
+        width: 60%;
+        float: left;
+        padding: 0 10px;
+    }
+
+    .food-price {
+        width: 15%;
+        height: 100%;
+        float: left;
+        text-align: right;
+    }
+
+
+    .chef {
+        width: 45%;
+
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+
+    .reserve-form {
+        width: 90%;
+        text-align: center;
+        /* margin: 0 auto;
+        padding: 10px; */
+    }
+
+    .row:not(last-child) {
+        width: 30%;
+        display: inline-block;
+        margin: 4px;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    
+
+    /* .btn-primary {
+        width: fit-content;
+    } */
+
+    .contact-form .row:nth-child(4){
+        width: 94%;
+        /* background-color: #272727; */
+    }
+
+    .wrapper {
+        /* height: fit-content; */
+        width: 100%;
+        
+    }
+
+    .contact-form {
+        width: 50%;
+        height: 450px;
+        text-align: center;
+        background: none;
+
+        float: left;
+        /* padding: 15px; */
+    }
+
+    .map {
+        width: 50%;
+        float: right;
+        margin: 0;
+        padding: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* Laptop screen */
+@media only screen and (min-width: 992px) {
+
+    ul li a {
+        font-size: 18px;
+    }
+
+    .banner {
+        height: 700px;
+    }
+
+    .welcome h1 {
+        font-size: 56px;
+    }
+
+    .b-food-info>* {
+        margin-bottom: 20px;
+    }
+
+
+
+    .food {
+        height: 200px;
+        width: 47.5%;
+        margin: 10px;
+        padding: 5px;
+
+        display: inline-block;
+
+    }
+
+    .food-image {
+        width: 25%;
+    }
+    .food-desc {
+        width: 60%;
+        text-align: left;
+    }
+
+    .food-price {
+        width: 15%;
+        text-align: right;
+    }
+
+    .food-menu {
+        text-align: center;
+    }
+
+
+    .reserve-form {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+
+
+
+
+}
